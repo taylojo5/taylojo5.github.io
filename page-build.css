@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "LoadingText";
+    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+}
 *{
     margin: 0;
     padding: 0;
@@ -65,7 +69,7 @@ nav li:hover .navUnder{
 }
 
 #transitionWindow{
-    font-family: var(--mainLandFont);
+    font-family: 'LoadingText';
     font-size: 7vw;
     color: rgba(68, 68, 68, 0.8);
     display: flex;
