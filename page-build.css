@@ -1,6 +1,6 @@
 @font-face {
     font-family: "LoadingText";
-    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+    src: url("./Nunito-Regular.ttf");
 }
 *{
     margin: 0;
