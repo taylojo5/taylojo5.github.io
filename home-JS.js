@@ -12,7 +12,10 @@ function loadingScreen(){
 
         var splashLoad = document.createElement('p');
         splashLoad.id = 'splashLoad';
-        splashLoad.textContent = 'Give me a moment to get everything set up...';
+        var currentMessage = 0;
+        var loadMessages = ['Give me a moment to get everything set up...', 'Wow, still loading...',
+         'Well, this is either you or me...', 'Well &!*#'];
+        splashLoad.textContent = loadMessages[0];
 
         var splashSpinner = document.createElement('div');
         splashSpinner.id = 'splashSpinner';
@@ -22,6 +25,17 @@ function loadingScreen(){
         splashScreen.append(splashSpinner);
 
         document.body.append(splashScreen);
+        function scrollMessage(){
+            if(currentMessage == loadMessages.length - 1){
+                splashLoad.textContent = 'Well, I guess this is how things are now.'
+            }
+            else{
+                currentMessage++;
+                splashLoad.textContent = loadMessages[currentMessage];
+                setTimeout(scrollMessage, 2000);
+            }
+        }
+        setTimeout(scrollMessage, 2000);
     }
     sessionStorage.setItem('first', 'true');
 }
