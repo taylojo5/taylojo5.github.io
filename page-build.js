@@ -110,7 +110,8 @@ function createTransition(){
     loadingText.textContent = 'Just give me a minute to set things up.';
     loadingText.style.transition = '0.5s';
     transitionPar.style.transition = '0.5s';
-    transitionPar.style.opacity = 1;
+    transitionPar.style.opacity = 0;
+    loadingText.style.opacity = 0;
     transitionPar.append(loadingText);
     transitionWindow.append(transitionPar);
 
@@ -128,18 +129,21 @@ window.onload = () =>{
         var transitionP = document.getElementById('transitionPar');
         transitionWindow.style.opacity = 0;
         transitionWindow.style.zIndex = -1;
-        transitionP.style.opacity = 1;
+        transitionP.style.opacity = 0;
+        loadingText.style.opacity = 0;
     }
     else{
         setTimeout(()=>{
             var transitionP = document.getElementById('transitionPar');
-            transitionP.style.opacity = 1;}, 500);
+            transitionP.style.opacity = 1;
+            loadingText.style.opacity = 1;
+        }, 500);
         setTimeout(()=>{
             var transitionWindow = document.getElementById('transitionWindow');
             transitionWindow.style.opacity = 0;
             transitionWindow.style.zIndex = -1;
             sessionStorage.setItem('haveVisited', 'true');
-        }, 3000);
+        }, 500);
     }
 }
 
