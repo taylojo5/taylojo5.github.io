@@ -107,7 +107,7 @@ function createTransition(){
     transitionPar.id = 'transitionPar';
     loadingText.id = 'loadingText';
     transitionPar.textContent = 'Welcome!';
-    loadingText.textContent = 'Just give me a moment to set things up.';
+    loadingText.textContent = 'Just give me a minute to set things up.';
     loadingText.style.transition = '0.5s';
     transitionPar.style.transition = '0.5s';
     transitionPar.style.opacity = 1;
