@@ -46,8 +46,13 @@ body{
         height: calc(var(--vh, 1vh) * 12);
     }
 
+    #mobileNav{
+        display: none;
+    }
+
     nav ul{
         background-color: white;
+        width: calc(var(--vw, 1vw) * 50);
     }
 
     nav  a {
@@ -60,6 +65,7 @@ body{
         position: relative;
         cursor: pointer;
         border-bottom: thin solid transparent;
+        font-size: calc(var(--vw, 1vw) * 2);
     }
 
     .navUnder{
@@ -133,3 +139,52 @@ body{
         z-index: 1000;
         font-size: calc(var(--vw, 1vw) * 3);
     }
+
+@media (max-width: 1000px){
+    header{
+        width: calc(var(--vw, 1vw) * 100);
+    }
+
+    #pageLogo{
+        align-items: center;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #mobileNav{
+        position: absolute;
+        top: calc(var(--vh, 1vh) * 2);
+        left: 0;
+        display: block;
+        width: calc(var(--vh, 1vh) * 8);
+        height: calc(var(--vh, 1vh) * 8);
+    }
+
+    #mobileNavIcon{
+        height: 100%;
+        font-size: calc(var(--vh, 1vh) * 6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul{
+        width: calc(var(--vw, 1vw) * 0);
+        background-color: white;
+        left: 0;
+        transition: 1s;
+    }
+    nav li{
+        font-size: calc(var(--vh, 1vh) * 3);
+    }
+
+    nav li span{
+        display: none;
+        transition: 1s;
+        opacity: 0;
+    }
+}

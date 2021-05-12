@@ -1,7 +1,4 @@
 @media (max-width: 1000px) {
-    nav {
-        display: none;
-    }
     header{
         width: calc(var(--vw, 1vw) * 100);
     }
