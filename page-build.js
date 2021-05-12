@@ -142,7 +142,7 @@ window.onload = () =>{
             transitionWindow.style.opacity = 0;
             transitionWindow.style.zIndex = -1;
             sessionStorage.setItem('haveVisited', 'true');
-        }, 500);
+        }, 3000);
     }
 }
 
