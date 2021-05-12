@@ -21,101 +21,115 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 0.7vw;
-  }
-  ::-webkit-scrollbar-track {
+    width: calc(var(--vw, 1vw) * 0.7);
+}
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px grey;
-    border-radius: 1vw;
-  }
-  ::-webkit-scrollbar-thumb {
+    border-radius: calc(var(--vw, 1vw) * 1);
+}
+::-webkit-scrollbar-thumb {
     background: rgba(68, 68, 68, 0.6);
-    border-radius: 1vw;
-  }
-
-p{
-    font-family: var(--textLandFont);
+    border-radius: calc(var(--vw, 1vw) * 1);
 }
 
-nav ul{
-    background-color: white;
-}
+    p{
+        font-family: var(--textLandFont);
+    }
 
-nav  a {
-    text-decoration: none;
-    color: black;
-    font-family: var(--textLandFont);
-}
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: calc(var(--vw, 1vw) * 50);
+        height: calc(var(--vh, 1vh) * 12);
+    }
 
-nav li{
-    position: relative;
-    cursor: pointer;
-    border-bottom: thin solid transparent;
-}
+    nav ul{
+        background-color: white;
+    }
 
+    nav  a {
+        text-decoration: none;
+        color: black;
+        font-family: var(--textLandFont);
+    }
 
-.navUnder{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: thin solid cornflowerblue;
-    transition: 0.4s;
-    z-index: -1;
-}
+    nav li{
+        position: relative;
+        cursor: pointer;
+        border-bottom: thin solid transparent;
+    }
 
-nav li:hover .navUnder{
-    width: 100%;
-}
+    .navUnder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-bottom: thin solid cornflowerblue;
+        transition: 0.4s;
+        z-index: -1;
+    }
 
-#transitionWindow{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 7vw;
-    color: rgba(68, 68, 68, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    nav li:hover .navUnder{
+        width: 100%;
+    }
 
-#transitionPar{
-    font-family: Arial, Helvetica, sans-serif;
-}
+    #transitionWindow{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calc(var(--vw, 1vw) * 7);
+        color: rgba(68, 68, 68, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#loadingText{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vw;
-}
+    #transitionPar{
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-#contentContainer{
-    position: relative;
-    padding-top: 6vh;
-}
+    #loadingText{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calc(var(--vw, 1vw) * 3);
+    }
 
-#pageLogo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 1vw;
-}
+    #contentContainer{
+        position: relative;
+        padding-top: calc(var(--vh, 1vh) * 6);
+    }
 
-#logoTitle{
-    font-family: var(--mainLogoFont);
-    letter-spacing: 1.3vh;
-    font-size: 6vh;
-}
+    #pageLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding-left: calc(var(--vw, 1vw) * 1);
+    }
 
-#mainTitle{
-    position: relative;
-    font-family: var(--mainLandFont);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 2vh;
-    height: 14vh;
-    width: 80vw;
-    z-index: 1000;
-    font-size: 3vw;
-}
+    #logoTitle{
+        font-family: var(--mainLogoFont);
+        letter-spacing: calc(var(--vh, 1vh) * 1.3);
+        font-size: calc(var(--vh, 1vh) * 6);
+    }
+
+    #mainTitle{
+        position: relative;
+        font-family: var(--mainLandFont);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: calc(var(--vh, 1vh) * 2);
+        height: calc(var(--vh, 1vh) * 14);
+        width: calc(var(--vw, 1vw) * 80);
+        z-index: 1000;
+        font-size: calc(var(--vw, 1vw) * 3);
+    }

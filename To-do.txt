@@ -6,7 +6,7 @@
 --Get graphics for the contact page links = Incomplete
 --Create a contact form and style it = Incomplete
 --Attach a resume file to the resume download button and enable it = Incomplete
---Write an opener for the home page = Complete-ish
+--Write an opener for the home page = Complete
 --Get home page slideshow images = Partially Complete
 --Create a slideshow function in JS for homepage = Complete
---Implement preloading for slideshow pictures = Incomplete
+--Implement preloading for slideshow pictures = Complete

@@ -92,7 +92,7 @@ function imagePreload(){
         newImg.style.position = 'absolute';
         newImg.style.top = 0;
         newImg.style.left = 0;
-        newImg.style.height = '84vh';
+        newImg.style.height = '100%';
         newImg.style.width = '100vw';
         newImg.style.zIndex = 10000000;
         newImg.style.opacity = 0;

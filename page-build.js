@@ -1,9 +1,16 @@
-
 createTransition();
 createNav();
 createHeader();
 createFooter();
 setUnderline();
+
+window.addEventListener('resize', () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    let vw = window.innerWidth * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    document.documentElement.style.setProperty('--vw', `${vw}px`);
+  });
 
 function createNav(){
     var pageNav = document.getElementById('nav');
@@ -51,21 +58,9 @@ function createNav(){
 
 function createHeader(){
     var pageHead = document.getElementById('header');
-    pageHead.style.display = 'flex';
-    pageHead.style.justifyContent = 'flex-start';
-    pageHead.style.alignItems = 'center';
-    pageHead.style.top = 0;
-    pageHead.style.left = 0;
-    pageHead.style.width = '50vw';
-    pageHead.style.height = '12vh';
+    
     var pageLogo = document.createElement('div');
     pageLogo.id = 'pageLogo';
-
-    pageLogo.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
-    pageLogo.style.height = '100%';
-    pageLogo.style.width = '100%';
-    pageLogo.style.top = 0;
-    pageLogo.style.left = 0;
 
     var logoTitle = document.createElement('a');
     logoTitle.id = 'logoTitle';
