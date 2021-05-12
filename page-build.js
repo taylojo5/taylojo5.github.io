@@ -108,8 +108,7 @@ function createTransition(){
     loadingText.style.transition = '0.5s';
     loadingText.style.transition = '0.5s';
     loadingText.style.opacity = 1;
-    transitionPar.append(loadingText);
-    transitionWindow.append(transitionPar);
+    transitionWindow.append(loadingText);
 
 
     document.body.append(transitionWindow);
