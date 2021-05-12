@@ -133,6 +133,7 @@ body{
         align-items: center;
         text-align: center;
         margin: auto;
+        margin-top: calc((var(--vh, 1vh) * 40) - (var(--vh, 1vh) * 14)/2);
         margin-bottom: calc(var(--vh, 1vh) * 2);
         height: calc(var(--vh, 1vh) * 14);
         width: calc(var(--vw, 1vw) * 80);

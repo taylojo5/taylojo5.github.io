@@ -53,6 +53,12 @@
     height: calc(var(--vh, 1vh) * 80);
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #homeDescription{
@@ -134,7 +140,7 @@
 
 #titleBackdropLeft {
     position: absolute;
-    top: 0;
+    top: calc(- (var(--vh, 1vh) * 14)/2);
     left: 0;
     border-top: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
     border-right: calc(var(--vh, 1vh) * 14) solid transparent;
@@ -143,7 +149,7 @@
 
   #titleBackdropRight {
     position: absolute;
-    top: 0;
+    top: calc(- (var(--vh, 1vh) * 14)/2);
     right: 0;
     border-bottom: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
     border-left: calc(var(--vh, 1vh) * 14) solid transparent;
