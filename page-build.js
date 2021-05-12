@@ -1,4 +1,4 @@
-imagePreload();
+
 createTransition();
 createNav();
 createHeader();
@@ -152,20 +152,6 @@ function navigationPortal(){
     transitionWindow.style.zIndex = 100000;
     transitionWindow.style.opacity = 1;
     setTimeout(() => {window.open(link, '_self');}, 500);
-}
-
-function imagePreload(){
-    var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
-    for(image = 0; image < slideList.length; image++){
-        var newImg = document.createElement('img');
-        newImg.url = slideList[image];
-        newImg.style.zIndex = -1;
-        newImg.style.position = 'absolute';
-        newImg.style.height = '50vh';
-        newImg.style.widows = '50vw';
-        document.body.append(newImg);
-    }
-    console.log('loaded images');
 }
 
 window.onload = () =>{

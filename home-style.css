@@ -52,6 +52,7 @@
 #contentContainer{
     height: 80vh;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #homeDescription{
@@ -65,7 +66,7 @@
     position: absolute;
     top: 0;
     text-align: center;
-    background-image: url(./slides1.jpg);
+    background-image: none;
     background-position: center;
     background-size: cover;
     height: 84vh;
@@ -76,7 +77,7 @@
 #slideshow{
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 0;
 }
 
 .arrows{
