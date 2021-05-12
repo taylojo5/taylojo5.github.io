@@ -27,15 +27,19 @@ function loadingScreen(){
         document.body.append(splashScreen);
         function scrollMessage(){
             if(currentMessage == loadMessages.length - 1){
+                splashLoad.style.opacity = 0;
                 splashLoad.textContent = 'Well, I guess this is how things are now.'
+                splashLoad.style.opacity = 1;
             }
             else{
                 currentMessage++;
+                splashLoad.style.opacity = 0;
                 splashLoad.textContent = loadMessages[currentMessage];
-                setTimeout(scrollMessage, 2000);
+                splashLoad.style.opacity = 1;
+                setTimeout(scrollMessage, 10000);
             }
         }
-        setTimeout(scrollMessage, 2000);
+        setTimeout(scrollMessage, 10000);
     }
     sessionStorage.setItem('first', 'true');
 }
