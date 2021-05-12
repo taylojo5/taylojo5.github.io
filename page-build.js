@@ -103,11 +103,17 @@ function createTransition(){
     transitionWindow.style.zIndex = 100000;
 
     var transitionPar = document.createElement('p');
+    var loadingText = document.createElement('p');
     transitionPar.id = 'transitionPar';
-    transitionPar.textContent = 'Welcome! Just give me a moment to set things up.';
+    loadingText.id = 'loadingText';
+    transitionPar.textContent = 'Welcome!';
+    loadingText.textContent = 'Just give me a moment to set things up.';
+    loadingText.style.transition = '0.5s';
     transitionPar.style.transition = '0.5s';
-    transitionPar.style.opacity = 0;
+    transitionPar.style.opacity = 1;
+    transitionPar.append(loadingText);
     transitionWindow.append(transitionPar);
+
 
     document.body.append(transitionWindow);
     

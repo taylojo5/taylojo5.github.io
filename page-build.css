@@ -73,6 +73,10 @@ nav li:hover .navUnder{
     align-items: center;
 }
 
+#loadingText{
+    font-size: 2vw;
+}
+
 #contentContainer{
     position: relative;
     padding-top: 6vh;
