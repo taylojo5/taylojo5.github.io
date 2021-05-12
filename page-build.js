@@ -160,6 +160,7 @@ function imagePreload(){
         var newImg = document.createElement('img');
         newImg.url = slideList[image];
         newImg.style.zIndex = -1;
+        newImg.style.position = 'absolute';
         newImg.style.height = '50vh';
         newImg.style.widows = '50vw';
         document.body.append(newImg);
