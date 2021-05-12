@@ -17,12 +17,20 @@ function loadingScreen(){
          'Well, this is either you or me...', 'Well &!*#'];
         splashLoad.textContent = loadMessages[0];
 
+        var spinnerDiv = document.createElement('div');
+        spinnerDiv.id = 'spinnerDiv';
+
         var splashSpinner = document.createElement('div');
         splashSpinner.id = 'splashSpinner';
+        var percentage = document.createElement('p');
+        percentage.id = 'percentage';
+        percentage.textContent = '0%';
+        spinnerDiv.append(percentage);
+        spinnerDiv.append(splashSpinner);
 
         splashScreen.append(splashText);
         splashScreen.append(splashLoad);
-        splashScreen.append(splashSpinner);
+        splashScreen.append(spinnerDiv);
 
         document.body.append(splashScreen);
         function scrollMessage(){
@@ -85,7 +93,13 @@ function slideshowPrev(){
 
 function imagePreload(){
     var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
+    var loadPercent = 0;
     for(image = 0; image < slideList.length; image++){
+        //update load percentage
+        loadPercent = Math.trunc((image / slideList.length) * 100);
+        var percent = document.getElementById('percentage');
+        percent.textContent = loadPercent + '%';
+
         var newImg = document.createElement('img');
         newImg.src = slideList[image];
         newImg.style.position = 'absolute';
@@ -98,6 +112,7 @@ function imagePreload(){
         slides.push(newImg);
         slideContainer.append(newImg);
     }
+    percent.textContent = 100 + '%';
     slides[0].style.opacity = 1;
     console.log('loaded images');
 }
