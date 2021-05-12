@@ -1,26 +1,30 @@
-// window.onload = () => {
-//     console.log(sessionStorage.getItem('haveVisited'));
-//     var transitionWindow = document.getElementById('transitionWindow');
-//     var loadingText = document.getElementById('loadingText');
+var first = sessionStorage.getItem('first');
 
-//     if(sessionStorage.getItem('haveVisited') == 'true'){
-//         console.log('less broken');
-//         transitionWindow.style.opacity = 0;
-//         transitionWindow.style.zIndex = -1;
-//         loadingText.style.opacity = 0;
-//     }
-//     else{
-//         loadingText.textContent = "Welcome";
-//         loadingText.style.opacity = 1;
-        
-//         setTimeout(()=>{
-//             transitionWindow.style.opacity = 0;
-//             transitionWindow.style.zIndex = -1;
-//             sessionStorage.setItem('haveVisited', 'true');
-//         }, 1500);
-//     }
-// }
+function loadingScreen(){
+    if(first != 'true'){
+        //create splash screen
+        var splashScreen = document.createElement('div');
+        splashScreen.id = 'splashScreen';
 
+        var splashText = document.createElement('p');
+        splashText.textContent = 'Welcome';
+        splashText.id = 'splashText';
+
+        var splashLoad = document.createElement('p');
+        splashLoad.id = 'splashLoad';
+        splashLoad.textContent = 'Give me a moment to get everything set up...';
+
+        var splashSpinner = document.createElement('div');
+        splashSpinner.id = 'splashSpinner';
+
+        splashScreen.append(splashText);
+        splashScreen.append(splashLoad);
+        splashScreen.append(splashSpinner);
+
+        document.body.append(splashScreen);
+    }
+    sessionStorage.setItem('first', 'true');
+}
 
 var currentSlide = 0;
 var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
@@ -56,4 +60,6 @@ function slideshowPrev(){
     slideContainer.style.backgroundImage = 'url(' + slideList[currentSlide] +')';
 }
 setTimeout(slideshowRotate, 10000);
+
+loadingScreen();
 

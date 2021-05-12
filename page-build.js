@@ -116,13 +116,6 @@ function createTransition(){
     document.body.style.display = 'block';
 }
 
-window.onload = () =>{
-    transitionWindow.style.opacity = 0;
-    transitionWindow.style.zIndex = -1;
-    loadingText.style.opacity = 0;
-}
-
-
 function setUnderline(){
     switch(true){
         case document.URL.includes('home'):
@@ -156,9 +149,6 @@ function navigationPortal(){
     console.log(event.target.href);
     var link = event.target.href
     var transitionWindow = document.getElementById('transitionWindow');
-    var transitionP = document.getElementById('transitionPar');
-    transitionP.style.transition = '0s';
-    transitionP.style.opacity = 0;
     transitionWindow.style.zIndex = 100000;
     transitionWindow.style.opacity = 1;
     setTimeout(() => {window.open(link, '_self');}, 500);
@@ -171,4 +161,20 @@ function imagePreload(){
         hiddenDiv.backgroundImage = 'url(' + slideList[image] +')';
     }
     console.log('loaded images');
+}
+
+window.onload = () =>{
+    var transitionWindow = document.getElementById('transitionWindow');
+    var splashScreen = document.getElementById('splashScreen');
+    transitionWindow.style.transition = '0.5s';
+    transitionWindow.style.opacity = 0;
+    transitionWindow.style.zIndex = -1;
+    if(splashScreen != null){
+        setTimeout(()=>{
+            console.log('close splash');
+            splashScreen.style.transition = '0.5s';
+            splashScreen.style.opacity = 0;
+            splashScreen.style.zIndex = -1;
+        }, 3000);
+    }
 }

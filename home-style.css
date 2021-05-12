@@ -1,3 +1,52 @@
+#splashScreen{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1000000;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#splashText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8vw;
+    color: rgba(54, 82, 129, 0.671);
+    transition: 0.5s;
+}
+
+#splashLoad{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: rgba(65, 65, 65, 0.5);
+    transition: 0.5s;
+}
+
+#splashSpinner{
+    margin-top: 2vh;
+    border: 0.5vh solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 0.5vh solid rgba(65, 65, 65, 0.5);
+    width: 4vw;
+    height: 4vw;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 #contentContainer{
     height: 80vh;
