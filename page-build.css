@@ -77,7 +77,12 @@ nav li:hover .navUnder{
     align-items: center;
 }
 
+#transitionPar{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #loadingText{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
 }
 
