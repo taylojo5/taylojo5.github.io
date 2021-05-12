@@ -158,7 +158,10 @@ function imagePreload(){
     var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
     var hiddenDiv = document.getElementById('hiddenDiv');
     for(image = 0; image < slideList.length; image++){
-        hiddenDiv.backgroundImage = 'url(' + slideList[image] +')';
+        newImg = document.createElement('img');
+        newImg.url = slideList[image];
+        newImg.style.zIndex = -1;
+        document.body.append(newImg);
     }
     console.log('loaded images');
 }
