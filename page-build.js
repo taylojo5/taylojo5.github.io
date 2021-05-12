@@ -102,15 +102,11 @@ function createTransition(){
     transitionWindow.style.transition = '0.5s';
     transitionWindow.style.zIndex = 100000;
 
-    var transitionPar = document.createElement('p');
     var loadingText = document.createElement('p');
-    transitionPar.id = 'transitionPar';
     loadingText.id = 'loadingText';
-    transitionPar.textContent = 'Loading...';
-    loadingText.textContent = 'Just give me a minute to set things up.';
+    loadingText.textContent = 'Just a sec...';
     loadingText.style.transition = '0.5s';
-    transitionPar.style.transition = '0.5s';
-    transitionPar.style.opacity = 1;
+    loadingText.style.transition = '0.5s';
     loadingText.style.opacity = 1;
     transitionPar.append(loadingText);
     transitionWindow.append(transitionPar);
@@ -122,28 +118,9 @@ function createTransition(){
 }
 
 window.onload = () =>{
-    console.log(sessionStorage.getItem('haveVisited'));
-    var transitionWindow = document.getElementById('transitionWindow');
-    var transitionP = document.getElementById('transitionPar');
-    var loadingText = document.getElementById('loadingText');
-
-    if(sessionStorage.getItem('haveVisited') == 'true'){
-        console.log('less broken');
-        transitionWindow.style.opacity = 0;
-        transitionWindow.style.zIndex = -1;
-        transitionP.style.opacity = 1;
-        loadingText.style.opacity = 0;
-    }
-    else{
-        transitionP.style.opacity = 1;
-        loadingText.style.opacity = 1;
-        
-        setTimeout(()=>{
-            transitionWindow.style.opacity = 0;
-            transitionWindow.style.zIndex = -1;
-            sessionStorage.setItem('haveVisited', 'true');
-        }, 3000);
-    }
+    transitionWindow.style.opacity = 0;
+    transitionWindow.style.zIndex = -1;
+    loadingText.style.opacity = 0;
 }
 
 

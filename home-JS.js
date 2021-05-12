@@ -1,3 +1,27 @@
+window.onload = () => {
+    console.log(sessionStorage.getItem('haveVisited'));
+    var transitionWindow = document.getElementById('transitionWindow');
+    var loadingText = document.getElementById('loadingText');
+
+    if(sessionStorage.getItem('haveVisited') == 'true'){
+        console.log('less broken');
+        transitionWindow.style.opacity = 0;
+        transitionWindow.style.zIndex = -1;
+        loadingText.style.opacity = 0;
+    }
+    else{
+        loadingText.textContent = "Welcome";
+        loadingText.style.opacity = 1;
+        
+        setTimeout(()=>{
+            transitionWindow.style.opacity = 0;
+            transitionWindow.style.zIndex = -1;
+            sessionStorage.setItem('haveVisited', 'true');
+        }, 1500);
+    }
+}
+
+
 var currentSlide = 0;
 var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
 var slideContainer = document.getElementById('pictureCarousel');
@@ -32,3 +56,4 @@ function slideshowPrev(){
     slideContainer.style.backgroundImage = 'url(' + slideList[currentSlide] +')';
 }
 setTimeout(slideshowRotate, 10000);
+
