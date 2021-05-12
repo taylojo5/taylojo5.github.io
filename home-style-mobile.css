@@ -9,6 +9,14 @@
         align-items: center;
     }
 
+    #splashText{
+        font-size: calc(var(--vh, 1vh) * 10);
+    }
+    
+    #splashLoad{
+        font-size: calc(var(--vw, 1vw) * 5);
+    }
+
     #contentContainer{
         height: calc(var(--vh, 1vh) * 82);;
     }
