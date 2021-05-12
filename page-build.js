@@ -104,7 +104,7 @@ function createTransition(){
 
     var transitionPar = document.createElement('p');
     transitionPar.id = 'transitionPar';
-    transitionPar.textContent = 'Welcome!';
+    transitionPar.textContent = 'Welcome! Just give me a moment to set things up.';
     transitionPar.style.transition = '0.5s';
     transitionPar.style.opacity = 0;
     transitionWindow.append(transitionPar);
@@ -122,7 +122,7 @@ window.onload = () =>{
         var transitionP = document.getElementById('transitionPar');
         transitionWindow.style.opacity = 0;
         transitionWindow.style.zIndex = -1;
-        transitionP.style.opacity = 0;
+        transitionP.style.opacity = 1;
     }
     else{
         setTimeout(()=>{
