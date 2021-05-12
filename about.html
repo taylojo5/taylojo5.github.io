@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jonathan Taylor">
+    <meta name="description" content="Meet Jonathan Taylor. Junior developer and project enthusiast">
+    <link rel="shortcut icon" href="" type="">
+    <title>About</title>
+    <link rel="icon" href="./siteIcon.png">
+    <link rel="stylesheet" href="./page-build.css" type="text/css">
+    <link rel="stylesheet" href="./about-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@200&family=PT+Serif&family=Six+Caps&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- This is the script that will auto build the header and menu on each page since it will be easier than creating a lot of copied code. May change if too hard-->
+  <script src="./page-build.js" defer></script>
+  <!--Injected Header Here. Put various class and ID names in this comment for easier referencing from CSS-->
+  <header id="header"></header>
+  <!--Injected Menu Here. Put various class and ID names in this comment for easier referencing from CSS-->
+  <nav id="nav"></nav>
+  <!--Do I want a loading screen? Could be fun...-->
+
+  <body data-router-wrapper>
+    <section id="contentContainer" data-router-view="about">
+      <div id="bio">
+        <div id="biography">
+          <img src="./headshot1.jpg" alt="Bio Picture" id="bioPic">
+          <br></br>
+          <p> My wife will probably write most of this...
+          </p>
+          <br></br>
+          <p> Here is some bio content here. This is mostly just so that I can get an idea of how it will view
+            when it is finished eventually. I will need to change the scrollbar on the this div so that it 
+            doesn't look so bad.
+          </p>
+          <br></br>
+          <p> Here is some more content, and thoughts continued. I may also want to give some kind of indication that
+            the bio can be scrolled down when the user is at the top, both ways in the middle, and scroll up when 
+            they are at the bottom
+          </p>
+          <br></br>
+          <p> I'm not entirely sure how I will go about that. Also, I think I should move the skills a little further
+            out towards the edge, so that the page feels less claustrophobic. Maybe go back to my original plan of the 
+            bio on top and the skills below. Not ideal, but this is crowded. 
+          </p>
+          <br></br>
+          <p> I'm not entirely sure how I will go about that. Also, I think I should move the skills a little further
+            out towards the edge, so that the page feels less claustrophobic. Maybe go back to my original plan of the 
+            bio on top and the skills below. Not ideal, but this is crowded. 
+          </p>
+          <br></br>
+          <p> I'm not entirely sure how I will go about that. Also, I think I should move the skills a little further
+            out towards the edge, so that the page feels less claustrophobic. Maybe go back to my original plan of the 
+            bio on top and the skills below. Not ideal, but this is crowded. 
+          </p>
+        </div>
+        <div id="resumeDownload">
+          <p>&#9782 Download Resume`</p>
+        </div>
+        <div class="skills" id="skillsDiv">
+          <ul id="skillList">
+            <li class="skillLi">&#10100 &#10101 Languages I know: <br> <span class="downArrow">&#x21e9</span>
+                <ul id="skill1">
+                    <li>Python</li>
+                    <li>HTML | CSS | JS</li>
+                    <li>C | C++</li>
+                </ul>
+            </li>
+            <li class="skillLi">&#9874 Places I've worked: <br> <span class="downArrow">&#x21e9</span></li>
+            <li class="skillLi">&#9881 Projects I enjoy: <br> <span class="downArrow">&#x21e9</span></li>
+            <li class="skillLi">&#10025 Misc accolades: <br> <span class="downArrow">&#x21e9</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <div id="hiddenDiv"></div>
+  </body>
+</html>  

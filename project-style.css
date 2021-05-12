@@ -1,0 +1,116 @@
+:root{
+    --mainLandFont: 'Fjalla One', sans-serif;
+    --textLandFont: 'Nunito', sans-serif;
+    --mainLogoFont: 'Six Caps', sans-serif;
+    --textLogoFont: 'PT Serif', serif;
+}
+
+#contentContainer{
+    padding-top: 0;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#updateContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    width: 30vw;
+}
+
+.pButton{
+    background-color: cornflowerblue;
+    border: thin solid rgba(68, 68, 68, 0.5);
+    font-family: var(--mainLandFont);
+    font-size: x-large;
+    display: block;
+    width: 100%;
+    height: 10vh;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.pButton:hover{
+    background-color: rgba(100, 148, 237, 0.5);
+    cursor: pointer;
+}
+
+#projectBackground{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    z-index: -1;
+    font-size: 4vw;
+    color: rgba(45, 45, 45, 0.5);
+    transition: 0.6s;
+}
+
+#updateToggle:hover{
+    transition: 0.5s;
+    background-color: rgba(100, 148, 237, 0.534);
+}
+
+#updateConsole{
+    height: 0vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    z-index: 1;
+}
+
+#taraProject{
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#taraSection{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    border-bottom: 0.35vh solid black;
+    font-size: xx-large;
+    overflow-y: scroll;
+    overflow-x: none;
+    transition: 0.6s;
+    opacity: 0;
+    z-index: -1;
+}
+
+#taraSection p{
+    width: 90%;
+    margin: auto;
+}
+
+#quadProject{
+    width: 15vw;
+    margin-right: 1vw;
+}
+
+#quadSection{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 98vw;
+    height: 70vh;
+    font-size: xx-large;
+    overflow-y: scroll;
+    overflow-x: none;
+    transition: 0.6s;
+    opacity: 0;
+    z-index: -1;
+}
