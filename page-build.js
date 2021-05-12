@@ -111,7 +111,7 @@ function createTransition(){
     loadingText.style.transition = '0.5s';
     transitionPar.style.transition = '0.5s';
     transitionPar.style.opacity = 1;
-    loadingText.style.opacity = 0;
+    loadingText.style.opacity = 1;
     transitionPar.append(loadingText);
     transitionWindow.append(transitionPar);
 
