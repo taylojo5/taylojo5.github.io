@@ -1,4 +1,4 @@
-imagePreload();
+//imagePreload();
 createTransition();
 createNav();
 createHeader();
