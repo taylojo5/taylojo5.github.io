@@ -28,7 +28,7 @@ function loadingScreen(){
         function scrollMessage(){
             if(currentMessage == loadMessages.length - 1){
                 splashLoad.style.opacity = 0;
-                splashLoad.textContent = 'Well, I guess this is how things are now.'
+                splashLoad.textContent = 'I guess this is how things are now.'
                 splashLoad.style.opacity = 1;
             }
             else{
