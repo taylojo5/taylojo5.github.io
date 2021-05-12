@@ -21,13 +21,13 @@ mobileNavButton.addEventListener('click', ()=>{
     menu.style.width = 'calc(var(--vw, 1vw) * 100)';
     var spanList = document.getElementsByClassName('navSpan');
     var count = 0;
-    setTimeout(nextNav, 75);
+    setTimeout(nextNav, 37);
     function nextNav(){
         var item = spanList[count];
         item.style.display = 'block';
         item.style.opacity = 1;
         count++;
-        if(count < 4) setTimeout(nextNav, 125);
+        if(count < 4) setTimeout(nextNav, 62);
     }
     mobileMenuOpen = true;
 });
@@ -44,7 +44,7 @@ contentContain.addEventListener('click', ()=>{
             item.style.opacity = 0;
             item.style.display = 'none';
             count--;
-            if(count > -1) setTimeout(prevNav, 75);
+            if(count > -1) setTimeout(prevNav, 37);
         }
         mobileMenuOpen = false;
     }

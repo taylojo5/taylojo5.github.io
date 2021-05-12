@@ -176,7 +176,7 @@ body{
         width: calc(var(--vw, 1vw) * 0);
         background-color: white;
         left: 0;
-        transition: 0.5s;
+        transition: 0.25s;
     }
     nav li{
         font-size: calc(var(--vh, 1vh) * 3);
