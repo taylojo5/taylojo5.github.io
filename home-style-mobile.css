@@ -18,18 +18,20 @@
         height: calc(var(--vh, 1vh) * 82);;
     }
 
+    #siteDescription{
+        height: 0;
+    }
+
     h1{
         display: none;
     }
 
     #titleBackdropLeft {
-        border-top: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
-        border-right: calc(var(--vh, 1vh) * 4) solid transparent;
+        display: none;
     }
     
     #titleBackdropRight {
-        border-bottom: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
-        border-left: calc(var(--vh, 1vh) * 4) solid transparent;
+        display: none;
     }
 
     #pictureCarousel{

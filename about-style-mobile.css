@@ -1,0 +1,41 @@
+@media (max-width: 1000px) {
+    #bio{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #bioPic{
+        width: 50%;
+    }
+    .skills{
+        height: 20%;
+        width: 100%;
+        margin-bottom: calc(var(--vh, 1vh) * 10);
+    }
+
+    #skill1{
+        display: none;
+    }
+
+    .skillLi {
+        width: 100% ;
+        height: 5%;
+        padding-top: 3%;
+    }
+    
+    .skillLi:hover{
+        height: 5%;
+    }
+
+    .skillLi:hover .downArrow{
+        transition: 1s;
+        display: block;
+    }
+
+    #resumeDownload{
+        height: calc(var(--vh, 1vh) * 10);
+        width: 100%;
+        left: 0;
+    }
+
+}

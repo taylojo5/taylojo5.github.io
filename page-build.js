@@ -6,8 +6,8 @@ setUnderline();
 
 window.addEventListener('resize', () => {
     // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    let vw = window.innerWidth * 0.01;
+    var vh = window.innerHeight * 0.01;
+    var vw = window.innerWidth * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.documentElement.style.setProperty('--vw', `${vw}px`);
   });
@@ -37,15 +37,14 @@ contentContain.addEventListener('click', ()=>{
         var menu = document.getElementById('navList');
         var spanList = document.getElementsByClassName('navSpan');
         var count = 3;
-        setTimeout(prevNav, 0);
-        menu.style.width = 'calc(var(--vw, 1vw) * 0)';
-        function prevNav(){
+        setTimeout(()=>{
             var item = spanList[count];
             item.style.opacity = 0;
             item.style.display = 'none';
             count--;
             if(count > -1) setTimeout(prevNav, 37);
-        }
+        }, 0);
+        menu.style.width = 'calc(var(--vw, 1vw) * 0)';
         mobileMenuOpen = false;
     }
 });
@@ -164,32 +163,32 @@ function setUnderline(){
             var page = document.getElementById('menuItemHome');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
-            break
+            break;
         case document.URL.includes('about'):
-            var page = document.getElementById('menuItemAbout');
+            page = document.getElementById('menuItemAbout');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
             logoTitle.style.borderBottom = 'thin solid cornflowerblue';
-            break
+            break;
         case document.URL.includes('project'):
-            var page = document.getElementById('menuItemProjects');
+            page = document.getElementById('menuItemProjects');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
             logoTitle.style.borderBottom = 'thin solid cornflowerblue';
-            break
+            break;
         case document.URL.includes('contact'):
-            var page = document.getElementById('menuItemContact');
+            page = document.getElementById('menuItemContact');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
             logoTitle.style.borderBottom = 'thin solid cornflowerblue';
-            break
+            break;
     }
 }
 
 function navigationPortal(){
-    event.preventDefault
+    event.preventDefault;
     console.log(event.target.href);
-    var link = event.target.href
+    var link = event.target.href;
     var transitionWindow = document.getElementById('transitionWindow');
     transitionWindow.style.zIndex = 100000;
     transitionWindow.style.opacity = 1;
