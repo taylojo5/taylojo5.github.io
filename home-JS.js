@@ -22,7 +22,9 @@ function loadingScreen(){
         splashSpinner.append()
 
         splashScreen.append(splashText);
-        splashScreen.append(splashLoad);
+        setTimeout(()=>{
+            splashScreen.append(splashLoad);
+        }, 3000);
         splashScreen.append(splashSpinner);
 
         document.body.append(splashScreen);
