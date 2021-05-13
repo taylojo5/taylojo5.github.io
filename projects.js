@@ -3,7 +3,7 @@ var updateConsole = document.getElementById('updateConsole');
 var taraSection = document.getElementById('taraSection');
 var quadSection = document.getElementById('quadSection');
 var projectBackground = document.getElementById('projectBackground');
-var updateToggled = true;
+var updateToggled = false;
 
 var taraButton = document.getElementById('taraButton');
 var quadButton = document.getElementById('quadButton');
