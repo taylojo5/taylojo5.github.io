@@ -210,6 +210,6 @@ window.onload = () =>{
             splashScreen.style.transition = '0.5s';
             splashScreen.style.opacity = 0;
             splashScreen.style.zIndex = -1;
-        }, 1500);
+        }, 1000);
     }
 }
