@@ -1,11 +1,4 @@
 @media (max-width: 1000px) {
-    header{
-        width: calc(var(--vw, 1vw) * 100);
-    }
-    #pageLogo{
-        align-items: center;
-    }
-
     #splashText{
         font-size: calc(var(--vh, 1vh) * 10);
     }

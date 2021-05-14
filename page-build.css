@@ -143,7 +143,7 @@ body{
 
 @media (max-width: 1000px){
     header{
-        width: calc(var(--vw, 1vw) * 100);
+        width: calc(var(--vw, 1vw) * 90);
         margin-left: calc(var(--vw, 1vw) * 10);
     }
 
