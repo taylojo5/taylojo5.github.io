@@ -1,11 +1,10 @@
 createTransition();
 createNav();
 createHeader();
-createFooter();
+//createFooter();
 setUnderline();
 
 window.addEventListener('resize', () => {
-    // We execute the same script as before
     var vh = window.innerHeight * 0.01;
     var vw = window.innerWidth * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -108,7 +107,7 @@ function createHeader(){
     var pageLogo = document.createElement('div');
     pageLogo.id = 'pageLogo';
 
-    var logoTitle = document.createElement('a');
+    var logoTitle = document.createElement('div');
     logoTitle.id = 'logoTitle';
     logoTitle.textContent = 'JONATHAN TAYLOR';
     pageLogo.append(logoTitle);
@@ -117,19 +116,19 @@ function createHeader(){
     
 }
 
-function createFooter(){
-    var pageFoot = document.createElement('footer');
-    pageFoot.style.position = 'fixed';
-    pageFoot.style.bottom = 0;
-    pageFoot.style.left = 0;
-    pageFoot.style.width = '100vw';
-    pageFoot.style.height = '3vh';
-    pageFoot.textContent = '';
-    pageFoot.style.textAlign = 'right';
-    pageFoot.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+// function createFooter(){
+//     var pageFoot = document.createElement('footer');
+//     pageFoot.style.position = 'fixed';
+//     pageFoot.style.bottom = 0;
+//     pageFoot.style.left = 0;
+//     pageFoot.style.width = '100vw';
+//     pageFoot.style.height = '3vh';
+//     pageFoot.textContent = '';
+//     pageFoot.style.textAlign = 'right';
+//     pageFoot.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
-    document.body.append(pageFoot);
-}
+//     document.body.append(pageFoot);
+// }
 
 function createTransition(){
     var transitionWindow = document.createElement('div');

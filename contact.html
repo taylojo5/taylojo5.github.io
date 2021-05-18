@@ -15,6 +15,7 @@
 
   <!-- This is the script that will auto build the header and menu on each page since it will be easier than creating a lot of copied code. May change if too hard-->
   <script src="./page-build.js" defer></script>
+  <script src="./contact.js" defer></script>
   <!--Injected Header Here. Put various class and ID names in this comment for easier referencing from CSS-->
   <header id="header"></header>
   <!--Injected Menu Here. Put various class and ID names in this comment for easier referencing from CSS-->
@@ -23,15 +24,26 @@
   <body id="body">
     <section id="contentContainer">
       <div id="contactLinks">
-        <ul id="contactList">
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-        </ul>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="VERTICAL" data-vanity="jonathanrtaylor101" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathanrtaylor101?trk=profile-badge"></a></div>
+        <div id="gitLink"><img src="./GitHub_Logo_White.png" alt="GitHub"></div>
+      </div>
+      <div id="contactText">
+        <h1 id="contactHeader">Let's build something together!</h1>
+        <h2 id="formText">You can get in touch with me via the links available or by dropping me a line below.</h2>
+        <div id="messageButton"> Direct Message </div>
+        <div id="contactFormContainer">
+          <p id="formClose">&#x2716</p>
+            <form action="" id="contactForm" method="POST">
+            <input type="text" name="nameBox" value="* Name: ">
+            <input type="email" name="emailBox" value="* Email: ">
+            <input type="tel" name="phoneBox" value="Phone: ">
+            <input type="text" name="messageBox" id="messageBox" value="* Type Message Here: ">
+            <input type="submit">
+          </form>
+        </div>
       </div>
     </section>
-    
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <div id="hiddenDiv"></div>
   </body>
 </html>  
