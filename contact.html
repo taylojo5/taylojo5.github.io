@@ -34,11 +34,13 @@
         <div id="contactFormContainer">
           <p id="formClose">&#x2716</p>
             <form action="" id="contactForm" method="POST">
-            <input type="text" name="nameBox" value="* Name: ">
-            <input type="email" name="emailBox" value="* Email: ">
-            <input type="tel" name="phoneBox" value="Phone: ">
-            <input type="text" name="messageBox" id="messageBox" value="* Type Message Here: ">
-            <input type="submit">
+            <input type="text" name="nameBox" id="nameBox" class="formInputs" value="* Name: ">
+            <div id="contactInfo">
+              <input type="email" name="emailBox" id="emailBox" class="formInputs" value="* Email: ">
+              <input type="tel" name="phoneBox" id="phoneBox" class="formInputs" value="Phone: ">
+            </div>
+            <input type="text" name="messageBox" id="messageBox" class="formInputs" value="* Type Message Here: ">
+            <input type="submit" id="submitButton">
           </form>
         </div>
       </div>

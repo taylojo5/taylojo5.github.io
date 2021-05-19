@@ -74,7 +74,7 @@ body{
         left: 0;
         width: 0;
         height: 100%;
-        border-bottom: thin solid cornflowerblue;
+        border-bottom: thin solid rgb(22, 79, 155);
         transition: 0.4s;
         z-index: -1;
     }

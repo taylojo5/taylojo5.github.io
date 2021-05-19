@@ -27,7 +27,7 @@
 }
 
 .pButton{
-    background-color: cornflowerblue;
+    background-color: rgb(22, 79, 155);
     border: thin solid rgba(68, 68, 68, 0.5);
     font-family: var(--mainLandFont);
     font-size: x-large;
@@ -39,7 +39,7 @@
 }
 
 .pButton:hover{
-    background-color: rgba(100, 148, 237, 0.5);
+    background-color: rgba(22, 79, 155, 0.5);
     cursor: pointer;
 }
 
@@ -60,13 +60,13 @@
 
 #updateToggle:hover{
     transition: 0.5s;
-    background-color: rgba(100, 148, 237, 0.534);
+    background-color: rgba(22, 79, 155, 0.534);
 }
 
 #updateConsole{
     height: 0vh;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: rgb(22, 79, 155);
     z-index: 1;
 }
 

@@ -1,12 +1,18 @@
 --Find some site fonts = Complete
 --Create a logo for the desktop website = Complete
---Create a logo for the mobile website = Incomplete
---Create graphics for the skills boxes = Partially Complete
---Write Bio = Incomplete
---Get graphics for the contact page links = Incomplete
---Create a contact form and style it = Incomplete
---Attach a resume file to the resume download button and enable it = Incomplete
+--Create a logo for the mobile website = Complete
+--Get graphics for the contact page links = Complete
+--Create a contact form and style it = Complete
 --Write an opener for the home page = Complete
 --Get home page slideshow images = Partially Complete
 --Create a slideshow function in JS for homepage = Complete
 --Implement preloading for slideshow pictures = Complete
+
+
+--Create graphics for the skills boxes = Partially Complete
+--Write Bio = Incomplete
+--Change skill boxes to be click activated
+--Set contact form action = Incomplete;
+--Attach a resume file to the resume download button and enable it = Incomplete
+--Add project details to the projects page = Incomplete
+--Add project updates to the projects page = Incomplete

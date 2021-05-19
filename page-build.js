@@ -161,25 +161,25 @@ function setUnderline(){
         case document.URL.includes('home'):
             var page = document.getElementById('menuItemHome');
             page.style.transition = '0.3s';
-            page.style.borderColor = 'cornflowerblue';
+            page.style.borderColor = 'rgb(22, 79, 155)';
             break;
         case document.URL.includes('about'):
             page = document.getElementById('menuItemAbout');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
-            logoTitle.style.borderBottom = 'thin solid cornflowerblue';
+            logoTitle.style.borderBottom = 'thin solid rgb(22, 79, 155)';
             break;
         case document.URL.includes('project'):
             page = document.getElementById('menuItemProjects');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
-            logoTitle.style.borderBottom = 'thin solid cornflowerblue';
+            logoTitle.style.borderBottom = 'thin solid rgb(22, 79, 155)';
             break;
         case document.URL.includes('contact'):
             page = document.getElementById('menuItemContact');
             page.style.transition = '0.3s';
             page.style.borderColor = 'cornflowerblue';
-            logoTitle.style.borderBottom = 'thin solid cornflowerblue';
+            logoTitle.style.borderBottom = 'thin solid rgb(22, 79, 155)';
             break;
     }
 }

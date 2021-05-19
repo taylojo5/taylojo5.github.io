@@ -143,16 +143,17 @@
     position: absolute;
     top: calc(- (var(--vh, 1vh) * 14)/2);
     left: 0;
-    border-top: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
+    border-top: calc(var(--vh, 1vh) * 14) solid rgba(22, 79, 155, 0.671);
     border-right: calc(var(--vh, 1vh) * 14) solid transparent;
     animation-fill-mode: forwards;
   }
+  
 
   #titleBackdropRight {
     position: absolute;
     top: calc(- (var(--vh, 1vh) * 14)/2);
     right: 0;
-    border-bottom: calc(var(--vh, 1vh) * 14) solid rgba(54, 82, 129, 0.671);
+    border-bottom: calc(var(--vh, 1vh) * 14) solid rgba(22, 79, 155, 0.671);
     border-left: calc(var(--vh, 1vh) * 14) solid transparent;
     animation-fill-mode: forwards;
   }
