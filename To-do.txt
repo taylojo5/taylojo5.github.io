@@ -7,12 +7,14 @@
 --Get home page slideshow images = Partially Complete
 --Create a slideshow function in JS for homepage = Complete
 --Implement preloading for slideshow pictures = Complete
+--Enable the resume download button = Complete
+--Change skill boxes to be click activated = Complete
+--Create graphics for the skills boxes = Complete
 
 
---Create graphics for the skills boxes = Partially Complete
+--Write content for skill boxes = Incomplete
 --Write Bio = Incomplete
---Change skill boxes to be click activated
 --Set contact form action = Incomplete;
---Attach a resume file to the resume download button and enable it = Incomplete
+--Attach a resume file to the resume download button= Incomplete
 --Add project details to the projects page = Incomplete
 --Add project updates to the projects page = Incomplete

@@ -16,6 +16,7 @@
 
   <!-- This is the script that will auto build the header and menu on each page since it will be easier than creating a lot of copied code. May change if too hard-->
   <script src="./page-build.js" defer></script>
+  <script src="./about.js" defer></script>
   <!--Injected Header Here. Put various class and ID names in this comment for easier referencing from CSS-->
   <header id="header"></header>
   <!--Injected Menu Here. Put various class and ID names in this comment for easier referencing from CSS-->
@@ -56,13 +57,13 @@
             bio on top and the skills below. Not ideal, but this is crowded. 
           </p>
         </div>
-        <div id="resumeDownload">
-          <p>&#10515 Download Resume`</p>
+        <div id="resumeDownload" >
+          <a href="./To-do.txt" download="Resume">&#10515 Download Resume`</a>
         </div>
         <div class="skills" id="skillsDiv">
           <ul id="skillList">
             <li class="skillLi">&#10100 &#10101 Languages I know:
-                <ul id="skill1">
+                <ul class="skillContent">
                     <li>Python</li>
                     <li>HTML | CSS | JS</li>
                     <li>C | C++</li>

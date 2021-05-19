@@ -51,18 +51,20 @@
     align-items: center;
     font-family: var(--mainLandFont);
     color: rgba(68, 68, 68, 0.8);
-    font-size: x-large;
+    font-size: 150%;
     width: 100% ;
-    height: 10%;
-    padding-top: 3%;
+    height: 10vh;
+    padding-top: 5vh;
     border: thin solid rgba(68, 68, 68, 0.6);
     border-radius: 2vh;
-    transition: 0.4s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .skillLi:hover{
-    height: 15vw;
-    z-index: 1;
+    color: white;
+    background-color: rgb(22, 79, 155);
+    font-size: 180%;
 }
 
 .downArrow{
@@ -72,23 +74,19 @@
     margin-top: calc(var(--vh, 1vh) * -1);
 }
 
-.skillLi:hover .downArrow{
-    transition: 1s;
+.skillContent{
+    font-size: x-large;
+    list-style: none;
     display: none;
+    opacity: 0;
 }
 
 #skill1 li{
-    opacity: 0;
     border: none;
     list-style: none;
     font-family: var(--textLandFont);
     margin-top: 2vh;
     z-index: -1;
-}
-
-#skillList li:hover #skill1 li{
-    opacity: 1;
-    transition: 0.3s;
 }
 
 #biography{
@@ -118,19 +116,20 @@
     align-items: center;
     font-size: xx-large;
     bottom: 0;
-    left: 24%;
+    left: 21%;
     position: absolute;
     margin: auto;
     height: 12%;
-    width: 24%;
+    width: 30%;
     background-color: rgb(22, 79, 155);
     transition: 0.3s;
     border: thin solid rgba(68, 68, 68, 0.6);
 }
 
-#resumeDownload p{ 
+#resumeDownload a{ 
     font-size: 2vw;
     color: white;
+    text-decoration: none;
 }
 
 #resumeDownload:hover{
