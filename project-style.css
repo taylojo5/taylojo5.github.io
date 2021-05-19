@@ -27,8 +27,9 @@
 }
 
 .pButton{
-    background-color: rgb(22, 79, 155);
+    background-color: transparent;
     border: thin solid rgba(68, 68, 68, 0.5);
+    border-radius: 1rem;
     font-family: var(--mainLandFont);
     font-size: x-large;
     display: block;
@@ -36,10 +37,13 @@
     height: 10vh;
     z-index: 10;
     transition: 0.3s;
+    color: rgba(68, 68, 68, 0.8);
 }
 
 .pButton:hover{
-    background-color: rgba(22, 79, 155, 0.5);
+    background-color: rgba(22, 79, 155, 1);
+    font-size: xx-large;
+    color: white;
     cursor: pointer;
 }
 
@@ -60,7 +64,7 @@
 
 #updateToggle:hover{
     transition: 0.5s;
-    background-color: rgba(22, 79, 155, 0.534);
+    background-color: rgba(22, 79, 155, 1);
 }
 
 #updateConsole{
@@ -113,4 +117,9 @@
     transition: 0.6s;
     opacity: 0;
     z-index: -1;
+}
+
+#quadSection p{
+    width: 90%;
+    margin: auto;
 }

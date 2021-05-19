@@ -10,6 +10,7 @@
 --Enable the resume download button = Complete
 --Change skill boxes to be click activated = Complete
 --Create graphics for the skills boxes = Complete
+--Format the projects page = Complete
 
 
 --Write content for skill boxes = Incomplete
