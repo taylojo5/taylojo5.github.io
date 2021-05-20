@@ -83,6 +83,7 @@ for(index = 0; index < formInputs.length; index++){
 //     });
 
 document.getElementById('submitButton').addEventListener('click', function(event){
+    event.preventDefault();
     var req = new XMLHttpRequest();
     var payload = {"subject": "My Message", "message": "Whom, there it is!"};
     req.open('POST', 'https://sheltered-bastion-66869.herokuapp.com/contact', false);
@@ -91,6 +92,5 @@ document.getElementById('submitButton').addEventListener('click', function(event
     var response = JSON.parse(req.responseText);
     document.getElementById('originalUrl').textContent = response.longUrl;
     document.getElementById('shortUrl').textContent = response.id;
-    event.preventDefault();
     console.log("SENT: " + payload);
     });
