@@ -69,3 +69,28 @@ for(index = 0; index < formInputs.length; index++){
     formInputs[index].addEventListener('focus', removeValue);
     formInputs[index].addEventListener('click', addValue);
 }
+
+// $.ajax({
+//     url: 'your-heroku.com',
+//     type: 'POST',
+//     headers: {'Accept': 'application/json;'},
+//     data: {
+//     "subject": "subject",
+//     "message": "some body text"
+//     },
+//     }).done(function (res) {
+//       console.log(res); // it shows your email sent message.
+//     });
+
+document.getElementById('submitButton').addEventListener('click', function(event){
+    var req = new XMLHttpRequest();
+    var payload = {"subject": "My Message", "message": "Whom, there it is!"};
+    req.open('POST', 'https://sheltered-bastion-66869.herokuapp.com/contact', false);
+    req.setRequestHeader('Accept', 'application/json');
+    req.send(JSON.stringify(payload));
+    var response = JSON.parse(req.responseText);
+    document.getElementById('originalUrl').textContent = response.longUrl;
+    document.getElementById('shortUrl').textContent = response.id;
+    event.preventDefault();
+    console.log("SENT: " + payload);
+    });
