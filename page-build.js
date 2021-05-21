@@ -116,26 +116,12 @@ function createHeader(){
     
 }
 
-// function createFooter(){
-//     var pageFoot = document.createElement('footer');
-//     pageFoot.style.position = 'fixed';
-//     pageFoot.style.bottom = 0;
-//     pageFoot.style.left = 0;
-//     pageFoot.style.width = '100vw';
-//     pageFoot.style.height = '3vh';
-//     pageFoot.textContent = '';
-//     pageFoot.style.textAlign = 'right';
-//     pageFoot.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
-
-//     document.body.append(pageFoot);
-// }
-
 function createTransition(){
     var transitionWindow = document.createElement('div');
     transitionWindow.id = 'transitionWindow';
     transitionWindow.style.height = '100vh';
     transitionWindow.style.width = '100vw';
-    transitionWindow.style.position = 'absolute'
+    transitionWindow.style.position = 'absolute';
     transitionWindow.style.backgroundColor = 'white';
     transitionWindow.style.top = 0;
     transitionWindow.style.opacity = 1;
@@ -149,6 +135,10 @@ function createTransition(){
     loadingText.style.transition = '0.5s';
     loadingText.style.opacity = 1;
     transitionWindow.append(loadingText);
+
+    var loadSpinner = document.createElement('div');
+    loadSpinner.id = 'loadSpinner';
+    transitionWindow.append(loadSpinner);
 
 
     document.body.append(transitionWindow);
