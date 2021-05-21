@@ -15,8 +15,8 @@
 
 #splashText{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(var(--vh, 1vh) * 20);
-    color: rgba(54, 82, 129, 0.671);
+    font-size: calc(var(--vh, 1vh) * 10);
+    color: rgba(22, 79, 155, 0.7);
     transition: 0.5s;
 }
 
