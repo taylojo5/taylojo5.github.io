@@ -11,11 +11,12 @@
 --Change skill boxes to be click activated = Complete
 --Create graphics for the skills boxes = Complete
 --Format the projects page = Complete
+--Set contact form action = Complete;
 
 
+--Fix form prompt bug
 --Write content for skill boxes = Incomplete
 --Write Bio = Incomplete
---Set contact form action = Incomplete;
 --Attach a resume file to the resume download button= Incomplete
 --Add project details to the projects page = Incomplete
 --Add project updates to the projects page = Incomplete
