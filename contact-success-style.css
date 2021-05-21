@@ -1,0 +1,27 @@
+:root{
+    --mainLandFont: 'Fjalla One', sans-serif;
+    --textLandFont: 'Nunito', sans-serif;
+    --mainLogoFont: 'Six Caps', sans-serif;
+    --textLogoFont: 'PT Serif', serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: var(--mainLandFont);
+    margin: 0;
+    text-align: center;
+    font-size: 7vh;
+}
+
+h3{
+    font-family: var(--textLandFont);
+    color: rgba(65, 65, 65, 0.7);
+    font-size: 3vh;
+}

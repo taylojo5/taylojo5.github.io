@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jonathan Taylor">
+    <meta name="description" content="Meet Jonathan Taylor. Junior developer and project enthusiast">
+    <link rel="shortcut icon" href="" type="">
+    <title>Contact</title>
+    <link rel="icon" href="./siteIcon.png">
+    <link rel="stylesheet" href="./contact-form-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@200&family=PT+Serif&family=Six+Caps&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="./contact.js" defer></script>
+    <form action="https://sheltered-bastion-66869.herokuapp.com/contact" id="contactForm" method="POST">
+        <input type="text" name="nameBox" id="nameBox" class="formInputs" value="* Name: ">
+        <input type="email" name="emailBox" id="emailBox" class="formInputs" value="* Email: "><input type="tel" name="phoneBox" id="phoneBox" class="formInputs" value="Phone: ">
+
+        <input type="text" name="messageBox" id="messageBox" class="formInputs" value="* Type Message Here: ">
+        <input type="submit" id="submitButton">
+      </form>
+  </body>
+</html>
+
