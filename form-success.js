@@ -11,5 +11,14 @@ setTimeout(()=>{
     else{
         counter--;
         document.getElementById('timout').textContent = counter;
+        setTimeout(()=>{
+            if(counter==0){
+                return;
+            }
+            else{
+                counter--;
+                document.getElementById('timout').textContent = counter;
+            }
+        }, 950);
     }
 }, 950);
