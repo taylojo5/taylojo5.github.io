@@ -4,6 +4,8 @@ var messageForm = document.getElementById('contactFormContainer');
 var contactForm = document.getElementById('contactForm');
 var formInputs = document.getElementsByClassName('formInputs');
 var formValues = ['* Name: ', '* Email: ', 'Phone: ', 'Type Message Here...'];
+var submitButton = document.getElementById('submitButton');
+var loadSpinner = document.getElementById('loadSpinner');
 
 function removeValue(){
     event.stopPropagation();
@@ -49,4 +51,10 @@ for(index = 0; index < formInputs.length; index++){
 
 contactForm.addEventListener('click', ()=>{
     addValue();
+});
+
+submitButton.addEventListener('click',()=>{
+    loadSpinner.style.transition = '0.5s';
+    loadSpinner.style.zIndex = 1;
+    loadSpinner.style.opacity = 1;
 });

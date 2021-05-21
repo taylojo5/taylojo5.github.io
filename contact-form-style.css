@@ -47,3 +47,29 @@
     background-color: rgba(65, 65, 65, 0.8);
     border-width: medium;
 }
+
+#loadSpinner{
+    position: absolute;
+    top: 25vw;
+    left: 47vw;
+    margin-top: calc(var(--vh, 1vh) * 8);
+    border: calc(var(--vh, 1vh) * 0.5) solid #f3f3f3;
+    border-radius: 50%;
+    border-top: calc(var(--vh, 1vh) * 0.5) solid rgba(65, 65, 65, 0.5);
+    width: calc(var(--vw, 1vw) * 6);
+    height: calc(var(--vw, 1vw) * 6);
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    opacity: 0;
+    z-index: -1;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
