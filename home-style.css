@@ -52,7 +52,7 @@
 #contentContainer{
     height: calc(var(--vh, 1vh) * 80);
     overflow: hidden;
-    background-color: rgba(22, 79, 155, 0.4);
+    background-color: rgba(22, 79, 155, 0.3);
     padding-top: 0;
     position: relative;
     display: flex;
