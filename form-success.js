@@ -10,6 +10,7 @@ function redirectTimer(){
     }
     else{
         counter--;
+        document.getElementById('timout').textContent = counter;
         setTimeout(redirectTimer, 950);
     }
 }
