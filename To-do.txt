@@ -14,9 +14,16 @@
 --Set contact form action = Complete;
 
 
---Fix form prompt bug
+--Set form to redirect back to form page when it is closed and is on the success page = Incomplete
+    --Or set a delayed function that relays back to the form submit page. 
+--Fix form prompt bug= Incomplete
 --Write content for skill boxes = Incomplete
 --Write Bio = Incomplete
 --Attach a resume file to the resume download button= Incomplete
 --Add project details to the projects page = Incomplete
 --Add project updates to the projects page = Incomplete
+--Make skill box titles larger, and disable expansion = Incomplete
+--Make project titles larger and disable expansion = Incomplete
+
+--Style contact page for mobile = Incomplete
+--Style projects page for mobile = Incomplete
