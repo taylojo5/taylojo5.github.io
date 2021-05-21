@@ -51,7 +51,7 @@
     align-items: center;
     font-family: var(--mainLandFont);
     color: rgba(68, 68, 68, 0.8);
-    font-size: 150%;
+    font-size: 180%;
     width: 100% ;
     height: 10vh;
     padding-top: 5vh;
@@ -59,12 +59,12 @@
     border-radius: 2vh;
     transition: 0.3s;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .skillLi:hover{
     color: white;
     background-color: rgb(22, 79, 155);
-    font-size: 180%;
 }
 
 .downArrow{
@@ -79,9 +79,10 @@
     list-style: none;
     display: none;
     opacity: 0;
+    z-index: -1;
 }
 
-#skill1 li{
+.skillContent li{
     border: none;
     list-style: none;
     font-family: var(--textLandFont);

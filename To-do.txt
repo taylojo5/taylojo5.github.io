@@ -12,18 +12,19 @@
 --Create graphics for the skills boxes = Complete
 --Format the projects page = Complete
 --Set contact form action = Complete;
-
-
---Set form to redirect back to form page when it is closed and is on the success page = Incomplete
+--Set form to redirect back to form page when it is closed and is on the success page = Complete
     --Or set a delayed function that relays back to the form submit page. 
---Fix form prompt bug= Incomplete
+--Fix form prompt bug= Complete
+--Make skill box titles larger, and disable expansion = Complete
+--Make project titles larger and disable expansion = Complete
+--Attach a resume file to the resume download button= Complete
+
+
 --Write content for skill boxes = Incomplete
 --Write Bio = Incomplete
---Attach a resume file to the resume download button= Incomplete
 --Add project details to the projects page = Incomplete
 --Add project updates to the projects page = Incomplete
---Make skill box titles larger, and disable expansion = Incomplete
---Make project titles larger and disable expansion = Incomplete
+
 
 --Style contact page for mobile = Incomplete
 --Style projects page for mobile = Incomplete
