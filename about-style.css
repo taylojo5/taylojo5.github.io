@@ -14,6 +14,11 @@
     padding-top: 3vh;
 }
 
+#aboutHead{
+    font-family: var(--mainLandFont);
+    font-size: calc(var(--vh, 1vh) * 6);
+}
+
 #bio{
     position: relative;
     display: flex;
@@ -23,6 +28,18 @@
     margin-bottom: 4vh;
     width: 80vw;
     height: 80vh;
+}
+
+#personalValues li{
+    text-align: left;
+    font-family: var(--textLandFont);
+    font-style: italic;
+    font-size: x-large;
+    border: thin solid black;
+    border-radius: 1rem;
+    margin-top: 2vh;
+    padding: 1vh;
+
 }
 
 .skills{
@@ -76,10 +93,11 @@
 
 .skillContent{
     font-size: x-large;
-    list-style: none;
     display: none;
     opacity: 0;
     z-index: -1;
+    padding-left: 2vw;
+    list-style: disc;
 }
 
 .skillContent li{
@@ -109,6 +127,16 @@
     width: 25%;
     overflow: hidden;
     border-radius: 50%;
+}
+
+#jobPos{
+    font-size: 90%;
+    color: rgb(22, 79, 155);
+    transition: 0.3s;
+}
+
+.skillLi:hover #jobPos{
+    color: white;
 }
 
 #resumeDownload{

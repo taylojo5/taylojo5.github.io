@@ -78,6 +78,40 @@
     width: 100%;
     background-color: rgb(22, 79, 155);
     z-index: 1;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#updateConsole::-webkit-scrollbar-thumb {
+    background: rgba(200, 200, 200, 1);
+    border-radius: calc(var(--vw, 1vw) * 1);
+}
+
+#websiteSection h3{
+    font-family: var(--mainLandFont);
+    margin-bottom: 1vh;
+}
+
+#websiteSection h2{
+    font-family: var(--mainLandFont);
+    margin-bottom: 1vh;
+}
+
+.updateEntries{
+    color: white;
+    font-family: var(--mainLandFont);
+    font-size: 2.5vh;
+    padding: 1vh;
+    border-bottom:solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.updateTitles{
+    background-color: rgba(110, 110, 110, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 #taraProject{
@@ -154,4 +188,5 @@
 #websiteSection p{
     width: 90%;
     margin: auto;
+    text-align: left;
 }

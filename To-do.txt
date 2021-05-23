@@ -18,13 +18,14 @@
 --Make skill box titles larger, and disable expansion = Complete
 --Make project titles larger and disable expansion = Complete
 --Attach a resume file to the resume download button= Complete
+--Write content for skill boxes = Complete
+--Add project details to the projects page = Complete
+--Add project updates to the projects page = Complete
 
 
---Write content for skill boxes = Incomplete
 --Write Bio = Incomplete
---Add project details to the projects page = Incomplete
---Add project updates to the projects page = Incomplete
 
 
 --Style contact page for mobile = Incomplete
 --Style projects page for mobile = Incomplete
+--Set mobile option for skill JS on about page

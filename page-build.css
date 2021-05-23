@@ -133,11 +133,8 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: auto;
         color: white;
-        margin-top: calc((var(--vh, 1vh) * 40) - (var(--vh, 1vh) * 14)/2);
-        margin-bottom: calc(var(--vh, 1vh) * 2);
-        height: calc(var(--vh, 1vh) * 28);
+        height: calc(var(--vh, 1vh) * 80);
         width: calc(var(--vw, 1vw) * 80);
         z-index: 1000;
         font-size: calc(var(--vw, 1vw) * 3);

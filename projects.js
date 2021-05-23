@@ -33,6 +33,10 @@ function toggleUpdates(){
         quadSection.style.width = '100vw';
         websiteSection.style.width = '100vw';
         projectBackground.style.width = '100vw';
+        for(index=0; index < updateConsole.children.length; index++){
+            updateConsole.children[index].style.zIndex = -1;
+            updateConsole.children[index].style.opacity = 0;
+        }
         updateToggled = false;
     }
     else{
@@ -46,6 +50,10 @@ function toggleUpdates(){
         quadSection.style.width = '70vw';
         websiteSection.style.width = '70vw';
         projectBackground.style.width = '70vw';
+        for(index=0; index < updateConsole.children.length; index++){
+            updateConsole.children[index].style.zIndex = 1;
+            updateConsole.children[index].style.opacity = 1;
+        }
         updateToggled = true;
     }
 }
@@ -77,4 +85,15 @@ function projectDisplay(){
         openProject = projectSelected;
     }
     lastButton = event.target;
+}
+
+var titleNames = {'quad': 'Quad Project', 'tara': 'Tara Project', 'webpage': 'Webpage Project'};
+var updateLength = updateConsole.children.length * 2;
+
+for(index = 0; index < updateLength; index+=2){
+    var newTitle = document.createElement('p');
+    newTitle.textContent = titleNames[updateConsole.children[index].id];
+    newTitle.className = 'updateTitles';
+    console.log(updateConsole.children[index]);
+    updateConsole.insertBefore(newTitle, updateConsole.children[index]);
 }
