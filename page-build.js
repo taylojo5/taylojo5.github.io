@@ -113,6 +113,7 @@ function createHeader(){
     pageLogo.append(logoTitle);
 
     pageHead.append(pageLogo);
+    pageHead.style.marginLeft = 'calc(var(--vw, 1vw) * 10)';
     
 }
 

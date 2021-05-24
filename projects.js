@@ -4,6 +4,7 @@ var taraSection = document.getElementById('taraSection');
 var quadSection = document.getElementById('quadSection');
 var websiteSection = document.getElementById('websiteSection');
 var projectBackground = document.getElementById('projectBackground');
+var updateContainer = document.getElementById('updateContainer');
 var updateToggled = false;
 
 var taraButton = document.getElementById('taraButton');
@@ -29,10 +30,12 @@ function toggleUpdates(){
         updateButton.style.borderRadius = '1rem';
         updateButton.style.backgroundColor = 'rgba(22, 79, 155, 1)';
         updateButton.style.color = 'white';
-        taraSection.style.width = '100vw';
-        quadSection.style.width = '100vw';
-        websiteSection.style.width = '100vw';
+        taraSection.style.width = '99vw';
+        quadSection.style.width = '99vw';
+        websiteSection.style.width = '99vw';
         projectBackground.style.width = '100vw';
+        updateContainer.style.transition = '1s';
+        updateContainer.style.height = '10vh';
         for(index=0; index < updateConsole.children.length; index++){
             updateConsole.children[index].style.zIndex = -1;
             updateConsole.children[index].style.opacity = 0;
@@ -50,6 +53,7 @@ function toggleUpdates(){
         quadSection.style.width = '70vw';
         websiteSection.style.width = '70vw';
         projectBackground.style.width = '70vw';
+        updateContainer.style.height = '80vh';
         for(index=0; index < updateConsole.children.length; index++){
             updateConsole.children[index].style.zIndex = 1;
             updateConsole.children[index].style.opacity = 1;

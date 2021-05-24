@@ -1,0 +1,39 @@
+@media (max-width: 1000px) {
+    #taraProject{
+        width: calc(var(--vw, 1vw) * 32);
+        margin-top: 12vh;
+    }
+
+    #quadProject{
+        width: calc(var(--vw, 1vw) * 32);
+        margin-top: 12vh;
+    }
+
+    #websiteProject{
+        width: calc(var(--vw, 1vw) * 32);
+        margin-top: 12vh;
+    }
+
+    #updateContainer{
+        position: absolute;
+        width: calc(var(--vw, 1vw) * 98);
+        top: 0;
+        left: calc(var(--vw, 1vw) * 1);
+        height: 10vh;
+    }
+
+    #taraSection{
+        top: 28vh;
+    }
+
+    #quadSection{
+        top: 28vh
+    }
+
+    #websiteSection{
+        top: 28vh;
+        font-size: 3vh;
+        width: 99vw;
+    }
+
+}

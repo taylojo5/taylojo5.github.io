@@ -1,0 +1,50 @@
+@media (max-width: 1000px) {
+
+    #contentContainer{
+        flex-direction: column;
+    }
+
+    #contactLinks{
+        height: fit-content;
+        width: calc(var(--vw, 1vw) * 100);
+        min-height: 280px;
+        margin-top: 45vh;
+    }
+
+    #gitDiv{
+        margin-bottom: 3vh;
+    }
+
+    #contactText{
+        position: static;
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(var(--vw, 1vw) * 100);
+        height: 20vh;
+    }
+
+    #contactHeader{
+        position: absolute;
+        top: 2vh;
+        height: 5vh;
+        width: calc(var(--vw, 1vw) * 95);
+    }
+
+    #formText{
+        position: absolute;
+        top: 25vh;
+        width: calc(var(--vw, 1vw) * 95);
+        height: 5vh;
+    }
+
+    #messageButton{
+        height: 10vh;
+    }
+
+    #contactFormContainer{
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        width: calc(var(--vw, 1vw) * 100);
+    }
+}
