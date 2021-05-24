@@ -49,6 +49,12 @@ function loadingScreen(){
 
 var currentSlide = 0;
 var slideList = ['./slides1.jpg', './slides3.jpg', './slides4.jpg']
+var authorList = ['samsommer', 'Rohit Tandon', 'Ales Krivec'];
+var citeLinks = [
+    'https://unsplash.com/@samsommer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+ 'https://unsplash.com/@rohittandon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText', 
+ 'https://unsplash.com/@aleskrivec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'];
+var authorLink = document.getElementById('authorCite');
 var slides = [];
 var slideContainer = document.getElementById('pictureCarousel');
 
@@ -73,6 +79,8 @@ function slideshowNext(){
     }
     slides[currentSlide].style.transition = '3s';
     slides[currentSlide].style.opacity = 1;
+    authorLink.href = citeLinks[currentSlide];
+    authorLink.textContent = authorList[currentSlide];
 }
 
 function slideshowPrev(){
@@ -84,6 +92,8 @@ function slideshowPrev(){
     }
     slides[currentSlide].style.transition = '3s';
     slides[currentSlide].style.opacity = 1;
+    authorLink.href = citeLinks[currentSlide];
+    authorLink.textContent = authorList[currentSlide];
 }
 
 function imagePreload(){
@@ -94,7 +104,6 @@ function imagePreload(){
         newImg.style.position = 'absolute';
         newImg.style.top = 0;
         newImg.style.left = 0;
-        newImg.style.height = '100%';
         newImg.style.width = '100vw';
         newImg.style.zIndex = 10000000;
         newImg.style.opacity = 0;

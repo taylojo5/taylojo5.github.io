@@ -153,3 +153,11 @@
     border-left: calc(var(--vh, 1vh) * 14) solid transparent;
     animation-fill-mode: forwards;
   }
+
+  footer{
+      text-align: left;
+  }
+
+  footer a{
+      text-decoration: none;
+  }
