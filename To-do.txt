@@ -23,9 +23,9 @@
 --Add project updates to the projects page = Complete
 
 
---Write Bio = Incomplete
+--Write Bio = Partially Incomplete
 
 
---Style contact page for mobile = Incomplete
---Style projects page for mobile = Incomplete
+--Fix Contact mobile layout bug = Incomplete
+--Fix mobile menu bug where text does not vanish when menu is closed = Incomplete
 --Set mobile option for skill JS on about page
