@@ -24,106 +24,21 @@
 
   <body id="body">
       <section id="contentContainer">
-          <div id="projectBackground">
-            <p>Select a project to view its progress</p>
+          <div id="portfolio" class="projects">
+            <div class="backgroundShield"></div>
+            <p>Portfolio Website</p> 
           </div>
-          <div id="updateContainer">
-              <button type="button" id="updateToggle" class="pButton">Updates</button>
-              <div id="updateConsole">
-                <p id="webpage" class="updateEntries">Added update functionality and titles to update console on About page</p>
-                <p id="webpage" class="updateEntries">Added information about the page building script.</p>
-                <p id="webpage" class="updateEntries">Wrote the bio for About page</p>
-                <p id="webpage" class="updateEntries">Added information about the Home Page.</p>
-                <p id="webpage" class="updateEntries">Fixed the skill box bug on the About page</p>
-                <p id="webpage" class="updateEntries">Added information about the Contact Page.</p>
-                <p id="webpage" class="updateEntries">Finished setting up successful redirect from contact-success page back to Contact Page</p>
-                <p id="webpage" class="updateEntries">Attached Resume file to the download button</p>
-                <p id="webpage" class="updateEntries">Fixed bug that was not clearing form promts on click</p>
-                <p id="webpage" class="updateEntries">Email web-app successfully handles form information, and sends an email.</p>
-
-              </div>
-             
+          <div id="cityDistricts" class="projects">
+            <div class="backgroundShield"></div>
+            <p>City Districts Databse</p>
           </div>
-          <div id="taraProject">
-              <button type="button" id="taraButton" class="pButton" name="taraSection" value='Tara Robot'>Tara Robot</button>
-              <section id="taraSection">
-                <p>Coming Soon
-                </p>
-              </section>
+          <div id="mentorConnect" class="projects">
+            <div class="backgroundShield"></div>
+            <p>MentorConnect UI/UX Research</p>
           </div>
-          <div id="quadProject">
-              <button type="button" id="quadButton" class="pButton" name="quadSection" value='Quad Control'>Quad Control</button>
-              <section id="quadSection"><p>
-                Coming Soon
-              </p></section>
+          <div id="quadFC" class="projects">
+            Quadcopter Onboard Flight Controller
           </div>
-
-          <div id="websiteProject">
-            <button type="button" id="websiteButton" class="pButton" name="websiteSection" value='My Website'>My Website</button>
-            <section id="websiteSection">
-              <h2>Personal Website Building Project</h2>
-              <p>
-                This website that you are currently browsing has been a significant project of mine that has 
-                greatly developed my abilities as a web developer. A breakdown of each page and features is as follows:
-              </p>
-              <br>
-              <br></br>
-              <h3>The Page Build Script</h3>
-              <p>
-                Before individual HTML, CSS, and JavaScript is applied on each page, the main page-build script runs, and builds the
-                navigation, site logo, and page transitions and behaviors. While it was a challenge at first to standardize the build for each
-                page, doing so has increased the speed of finishing each page, reduced errors, and provided a cohesive theme for the site. 
-              </p>
-              <br>
-              <br></br>
-              <h3>The Home Page</h3>
-              <p>
-                The home page has a unique splash screen that is displayed the first time that a user visits the site in a session. To prevent the splash screen from
-                appearing every time a user navigated to the home page, I had to use session memory to track the first load of the page. While this method has more limitations
-                than using a cookie, it was faster to implement, and accomplishes what I need. 
-              </p>
-              <br>
-              <p>
-                The scrolling slideshow on the home page was difficult at first due to the on-demand loading of the images. The first time through the slideshow, there would be jerks
-                due to the images loading as they were needed, and before they were locally cached. To circumvent this problem, I wrote a script that loads each image, and then hides them
-                while the user is seeing the first-load splash screen. It did cause the load-screen to be present a little longer, but the image transitions on the slideshow were now consistently smooth
-                which was a user-experience that I prioritized over a longer load time in this case. 
-              </p>
-              <br>
-              <br></br>
-              <h3>The About Page</h3>
-              <p>
-                The 'About' page was the most-straightforward page of this website to develop. The layout of the bio and the skill boxes had o undergo a few revisions
-                until I was happy with the layout, but the content features on this page are fairly vanilla. The one challenge I had was with the skill box expansion with a 
-                'click' event. Opening a box was no problem, but I was having difficulties with the 'click' listeners applying to the box content, and trying to re-open the box when
-                the user clicked the sub-content. Unfortunately, the best solution I came up with was checking the event targets to ensure it was a valid target before running the rest of the script.
-                I imagine there is a more eloquent way to accomplish that solution, and I may look into it more later.
-              </p>
-              <br>
-              <br></br>
-              <h3>The Project Page</h3>
-              <p>
-                 The project page is mainly comprised of a few absolutely-positioned divs that are activated by click events like this one that you are viewing. 
-                 Each button is linked to the content page, and uses a bollean based click event to either open or close a page while checking to see if any other
-                 open content pages need to be closed. The updates bar simply drops down or rolls up on a click. It also reshapes the content pages to allow them to 
-                 exist alongside it in the simulated relative-position. All of this was a personal design-choice, and I think it will have a greater advantage as more 
-                 updates and project content are added to the page over time.
-              </p>
-              <br>
-              <br></br>
-              <h3>The Contact Page</h3>
-              <p>
-                 Each of the previous pages is mostly static in nature. This is largely due to this website being part of a 3-week school project with no time for extensive back-end work. 
-                 However, the contact page is where I made an exception, and included a small aspect of dynamic functionality. This choice was made because the features that I wanted were not possibile 
-                 with static development, and I also thought that some time in back-end would be beneficial. The layout and appearance of the contact page is mostly static, but the conact form itself has 
-                 more going on under the hood. The contact form submits via 'post' method to a web-app that I deployed on an outside server. This web-app then takes the information entered by the user,
-                 packages it with a node module, and sends it to my personal email via another module. Once the email is sucessfully sent, the server links to a sent-success page that redirects back to the 
-                 original form. In summary, the contact page was fairly easy to build on the front-end, but the back-end functionality of the email web-app took a lot of work and learning. 
-              </p>
-          </section>
-        </div>
-
-
       </section>
       <div id="hiddenDiv"></div>
     <script src="./projects.js"></script>

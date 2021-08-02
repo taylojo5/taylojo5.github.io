@@ -8,6 +8,7 @@
     --textLandFont: 'Nunito', sans-serif;
     --mainLogoFont: 'Six Caps', sans-serif;
     --textLogoFont: 'PT Serif', serif;
+    overflow-x: hidden;
 }
 
 #contentContainer{
@@ -54,7 +55,8 @@
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -68,44 +70,66 @@
     align-items: center;
     font-family: var(--mainLandFont);
     color: rgba(68, 68, 68, 0.8);
-    font-size: 180%;
+    font-size: 160%;
     width: 100% ;
-    height: 10vh;
-    padding-top: 5vh;
+    height: 42%;
+    padding-top: 1vh;
     border: thin solid rgba(68, 68, 68, 0.6);
     border-radius: 2vh;
     transition: 0.3s;
-    cursor: pointer;
     background-color: transparent;
+    margin: 3% 0 3% 0;
 }
 
-.skillLi:hover{
-    color: white;
-    background-color: rgb(22, 79, 155);
+#languageIcons{
+    margin-top: 5%;
 }
 
-.downArrow{
-    transition: 1s;
-    color: rgb(22, 79, 155);
-    font-size: calc(var(--vh, 1vh) * 4);
-    margin-top: calc(var(--vh, 1vh) * -1);
+i{
+    font-size: 140%;
+    margin: 3%;
 }
 
-.skillContent{
-    font-size: x-large;
-    display: none;
-    opacity: 0;
-    z-index: -1;
-    padding-left: 2vw;
-    list-style: disc;
+#htmlI{
+    color: orangered;
+}
+#cssI{
+    color: rgb(46, 119, 255);
+}
+#jsI{
+    color: gold;
+}
+#nodeI{
+    color: rgb(107, 197, 55);
+}
+#flask{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 140%;
+    margin: 3%;
+    color: black;
+}
+#pythonI{
+    color: rgb(55,106,148);
+}
+#mysql{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 140%;
+    margin: 3%;
+    color: rgb(220,134,0);
+}
+#gitI{
+    color: black;
 }
 
-.skillContent li{
-    border: none;
-    list-style: none;
-    font-family: var(--textLandFont);
-    margin-top: 2vh;
-    z-index: -1;
+#softSkillList{
+    list-style: square;
+    margin-top: 3%;
+}
+
+#softSkillList li{
+    color: black;
+    text-align: left;
+    font-size: 80%;
 }
 
 #biography{
@@ -127,12 +151,6 @@
     width: 25%;
     overflow: hidden;
     border-radius: 50%;
-}
-
-#jobPos{
-    font-size: 90%;
-    color: rgb(22, 79, 155);
-    transition: 0.3s;
 }
 
 .skillLi:hover #jobPos{

@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@200&family=PT+Serif&family=Six+Caps&display=swap" rel="stylesheet">
   </head>
 
+  <!-- Font Awesome Scripts -->
+  <script src="https://kit.fontawesome.com/020658fe35.js" crossorigin="anonymous" defer></script>
+
   <!-- This is the script that will auto build the header and menu on each page since it will be easier than creating a lot of copied code. May change if too hard-->
   <script src="./page-build.js" defer></script>
   <script src="./about.js" defer></script>
@@ -82,33 +85,26 @@
         </div>
         <div class="skills" id="skillsDiv">
           <ul id="skillList">
-            <li class="skillLi" id="skill1">&#10100 &#10101 Languages I know:
-                <ul class="skillContent">
-                    <li>Python</li>
-                    <li>HTML | CSS | JS</li>
-                    <li>C | C++</li>
-                </ul>
+            <li class="skillLi" id="skill1">&#10100 &#10101 Language Skills:
+              <div id="languageIcons">
+                <i id="htmlI" class="fab fa-html5"></i>
+                <i id="cssI" class="fab fa-css3"></i>
+                <i id="jsI" class="fab fa-js-square"></i>
+                <i id="nodeI" class="fab fa-node-js"></i>
+                <i id="pythonI" class="fab fa-python"></i>
+                <span id="flask">Flask</span>
+                
+                <span id="mysql">SQL</span>
+                <i id="gitI" class="fab fa-github"></i>
+              </div>
             </li>
-            <li class="skillLi">&#9874 Places I've worked:
-              <ul class="skillContent">
-                <li>LeTourneau University <br> <span id="jobPos">Peer Advisor</span></li>
-                <li>Dynamic Aviation <br> <span id="jobPos">Legacy Aircraft Technician</span></li>
-                <li>Envoy Air Inc. <br> <span id="jobPos">Aircraft Technician</span></li>
-            </ul>
-            </li>
-            <li class="skillLi">&#9881 Hobbies I enjoy:
-              <ul class="skillContent">
-                <li>Volleyball</li>
-                <li>Volunteering for friends' house projects</li>
-                <li>Building and programming robots</li>
-            </ul>
-            </li>
-            <li class="skillLi">&#10025 Misc accolades:
-              <ul class="skillContent">
-                <li>TBA</li>
-                <li>TBA</li>
-                <li>TBA</li>
-            </ul>
+            <li class="skillLi">&#9874 Soft Skills:
+              <ul id="softSkillList">
+                <li>Troubleshooting</li>
+                <li>Team Leadership</li>
+                <li>Wireframe & Prototyping</li>
+                <li>Project Managment</li>
+              </ul>
             </li>
           </ul>
         </div>
