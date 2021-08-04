@@ -13,6 +13,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@200&family=PT+Serif&family=Six+Caps&display=swap" rel="stylesheet">
   </head>
+  <!-- Font Awesome Scripts -->
+  <script src="https://kit.fontawesome.com/020658fe35.js" crossorigin="anonymous" defer></script>
 
   <!-- This is the script that will auto build the header and menu on each page since it will be easier than creating a lot of copied code. May change if too hard-->
   <script src="./page-build.js" defer></script>
@@ -24,16 +26,45 @@
 
   <body id="body">
       <section id="contentContainer">
-          <div id="portfolio" class="projects">
+          <div id="portfolio" class="projects" onclick="goToPortfolio()">
             <div class="backgroundShield"></div>
+            <div id="portfolioLang" class="projectAttributes">
+              <i id="htmlI" class="fab fa-html5"></i>
+              <i id="cssI" class="fab fa-css3"></i>
+              <i id="jsI" class="fab fa-js-square"></i>
+              <i id="nodeI" class="fab fa-node-js"></i>
+              <span id="express">Express</span>
+            </div>
+            <div class="projectLinks">
+              <a href="./portfolioProjectInfo.html">Info</a>
+            </div>
             <p>Portfolio Website</p> 
           </div>
           <div id="cityDistricts" class="projects">
             <div class="backgroundShield"></div>
+            <div id="districtLang" class="projectAttributes">
+              <i id="htmlI" class="fab fa-html5"></i>
+              <i id="cssI" class="fab fa-css3"></i>
+              <i id="jsI" class="fab fa-js-square"></i>
+              <i id="pythonI" class="fab fa-python"></i>
+              <i id="mysql" class="fas fa-database"></i>
+              <span id="express">Flask</span>
+            </div>
+            <div class="projectLinks">
+              <a href="./districtProjectInfo.html">Info</a>
+              <a href="https://city-districts.herokuapp.com/">View</a>
+            </div>
             <p>City Districts Databse</p>
           </div>
           <div id="mentorConnect" class="projects">
             <div class="backgroundShield"></div>
+            <div id="mentorLang" class="projectAttributes">
+              <span id="express">Figma Prototype</span>
+            </div>
+            <div class="projectLinks">
+              <a href="./mentorProjectInfo.html">Info</a>
+              <a href="#">View</a>
+            </div>
             <p>MentorConnect UI/UX Research</p>
           </div>
           <div id="quadFC" class="projects">

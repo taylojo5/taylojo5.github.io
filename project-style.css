@@ -37,6 +37,96 @@
 .projects:hover .backgroundShield{
     background-color: rgba(0, 0, 0, 0.3);
 }
+.projectLinks{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    opacity: 0;
+}
+.projectLinks:hover{
+    opacity: 1;
+}
+.projectLinks a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 140%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+}
+.projectLinks a:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.projectAttributes{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#languageIcons{
+    margin-top: 5%;
+}
+i{
+    font-size: 100%;
+    margin: 3%;
+}
+#htmlI{
+    color: orangered;
+}
+#cssI{
+    color: rgb(46, 119, 255);
+}
+#jsI{
+    color: gold;
+}
+#nodeI{
+    color: rgb(107, 197, 55);
+}
+#flask{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    margin: 3%;
+    color: black;
+}
+#flask img{
+    margin-top: 1vh;
+    height: 5vh;
+}
+#pythonI{
+    color: rgb(55,106,148);
+}
+#mysql{
+    font-size: 100%;
+    margin: 3%;
+    color: rgb(220,134,0);
+}
+#express{
+    font-family: var(--textLandFont);
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+    margin: 3%;
+}
+#gitI{
+    color: black;
+}
 
 .backgroundShield{
     position: absolute;
@@ -53,15 +143,30 @@
     background-position: top;
     background-size: cover;
 }
+#portfolio:hover p{
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1;
+}
 
 #cityDistricts{
     background-image: url(./districtsThumb.png);
     background-position: top;
     background-size: cover;
 }
+#cityDistricts:hover p{
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1;
+}
 
 #mentorConnect{
     background-image: url(./mentorConnectThumb.png);
     background-position: top;
     background-size: cover;
+}
+#mentorConnect:hover p{
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1;
 }

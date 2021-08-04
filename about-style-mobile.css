@@ -8,7 +8,7 @@
         width: 50%;
     }
     .skills{
-        height: 20%;
+        height: 40%;
         width: 100%;
         margin-bottom: calc(var(--vh, 1vh) * 10);
         margin-top: calc(var(--vh, 1vh) * 2);
@@ -16,8 +16,11 @@
 
     .skillLi {
         width: 100% ;
-        height: 5vh;
+        height: calc(var(--vh, 1vh) * 20);
         padding-top: 1vh;
+        border: thin solid gray ;
+        border-radius: calc(var(--vh, 1vh) * 1);
+        font-size: 300%;
     }
 
     #resumeDownload{

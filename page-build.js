@@ -131,7 +131,7 @@ function createTransition(){
 
     var loadingText = document.createElement('p');
     loadingText.id = 'loadingText';
-    loadingText.textContent = 'Just a sec...';
+    loadingText.textContent = 'One Moment...';
     loadingText.style.transition = '0.5s';
     loadingText.style.transition = '0.5s';
     loadingText.style.opacity = 1;
@@ -183,6 +183,14 @@ function navigationPortal(){
     transitionWindow.style.zIndex = 100000;
     transitionWindow.style.opacity = 1;
     setTimeout(() => {window.open(link, '_self');}, 500);
+}
+
+function goToProjects(){
+    event.preventDefault()
+    document.body.style.transition = '1s';
+    document.body.style.transform = 'translateX(-100vw)';
+    document.body.style.transformStyle = 'linear';
+    setTimeout(()=>{window.location = './project.html'}, 900);
 }
 
 window.onload = () =>{
